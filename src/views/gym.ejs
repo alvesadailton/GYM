@@ -1,0 +1,18 @@
+<%- include('includes/head'); %>
+
+<section class="container">
+  <h1 class="title">Welcome <%= %>!</h1>
+  <p class="description">What is your goal going to the gym?</p>
+  <a href="/gym/hypertrophy" class="hypertrophy">
+    <button class="gym-button">Hypertrophy</button>
+  </a>
+  <a href="/gym/loseweight" class="loseweight">
+    <button class="gym-button loseweight">To lose weight</button>
+  </a>
+  <a href="/gym/define" class="define">
+    <button class="gym-button define">Define muscles</button>
+  </a>
+  <a href="/logout" class="logout">Leave</a>
+</section>
+
+<%- include('includes/footer') %>

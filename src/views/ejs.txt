@@ -1,0 +1,12 @@
+<%= Imprime escapando caracteres (mostra) %>
+<%- Imprime sem escapar caracteres (executa) %>
+<%# Comentario %>
+<%- include('caminho/arquivo'); %>
+
+<% Controle de fluxo (if, for...) %>
+
+<% if (algo) { %>
+   <%= exibe alguma coisa %>
+<% } else { %>
+   <%= exibe alguma coisa %>
+<% } %>

@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: $primary-color;
+  font-family: "Open sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    width: 60%;
+    max-width: 700px;
+    max-height: 500px;
+    margin: 50px 0;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    overflow-y: auto;
+    .title,
+    .description {
+      text-align: center;
+      padding: 10px;
+    }
+    .title {
+      font-size: 1.3em;
+      line-height: 1.5em;
+    }
+    .description {
+      font-size: 1em;
+      margin-bottom: 15px;
+    }
+    .want {
+      text-align: center;
+      font-size: 1.3em;
+      text-decoration: none;
+    }
+    button {
+      border: none;
+      padding: 5px;
+      font-size: 1em;
+      background: $primary-color;
+      color: #fff;
+      width: 350px;
+      height: 50px;
+      margin: 10px auto;
+      font-weight: 700;
+      border-radius: 30px;
+      cursor: pointer;
+      &:hover {
+        background: $primary-color-darker;
+        scale: 1.05;
+        transition: 500ms;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    background: $primary-color;
+    font-family: "Open sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column nowrap;
+      width: 100%;
+      height: 100%;
+      margin: 50px 0;
+      padding: 5px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      .title,
+      .description {
+        text-align: center;
+      }
+      .title {
+        font-size: 1em;
+        line-height: 1em;
+      }
+      .description {
+        font-size: 0.9em;
+        margin-bottom: 15px;
+      }
+      .want {
+        text-align: center;
+        font-size: 1em;
+        text-decoration: none;
+      }
+      button {
+        border: none;
+        padding: 5px;
+        font-size: 1em;
+        background: $primary-color;
+        color: #fff;
+        width: 150px;
+        height: 50px;
+        margin: 10px auto;
+        font-weight: 700;
+        border-radius: 30px;
+        cursor: pointer;
+        &:hover {
+          background: $primary-color-darker;
+          scale: 1.05;
+          transition: 500ms;
+        }
+      }
+    }
+  }
+
+}
